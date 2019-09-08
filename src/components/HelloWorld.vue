@@ -1,32 +1,24 @@
 <template>
   <v-container class="container">
-    <v-column>
-      <v-card class="card">
-        <img src>
-        <v-card-title>
-          Work1
-        </v-card-title>
-        <v-card-content>
-          説明
-        </v-card-content>
-      </v-card>
+    <div class="d-flex flex-column">
       <v-card class="card">
         <v-card-title>
           Work1
         </v-card-title>
-        <v-card-content>
-          説明
-        </v-card-content>
       </v-card>
-      <v-card class="card">
-        <v-card-title>
-          Work1
-        </v-card-title>
-        <v-card-content>
-          説明
-        </v-card-content>
-      </v-card>
-    </v-column>
+      <div class="d-flex flex-row">
+        <v-card class="card">
+          <v-card-title>
+            Work2
+          </v-card-title>
+        </v-card>
+        <v-card class="card">
+          <v-card-title>
+            Work3
+          </v-card-title>
+        </v-card>
+      </div>
+    </div>
   </v-container>
 </template>
 
@@ -47,8 +39,9 @@ export default {
   width: 100vw;
 }
 .card {
-  width: 80vw;
-  margin: 100px;
+  /* width: 80vw; */
+  margin: 5px;
   border-radius: 30px;
+  height: 100%;
 }
 </style>
